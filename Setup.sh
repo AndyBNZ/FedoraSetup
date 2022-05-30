@@ -1,7 +1,7 @@
 read -p "Starting environment swap, press any key to resume ..."
 sudo dnf swap @server-product-environment @minimal-environment -y
 read -p "Starting pantheon install, press any key to resume ..."
-sudo dnf group install ‘Pantheon Desktop’ -y
+sudo dnf group install pantheon-desktop -y
 
 read -p "Disabling GDM, press any key to resume ..."
 systemctl disable gdm
